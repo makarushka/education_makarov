@@ -25,6 +25,9 @@
 		5BED731821F76F78009BB491 /* TaskFour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED731721F76F78009BB491 /* TaskFour.storyboard */; };
 		5BED731A21F76FBC009BB491 /* TaskFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED731921F76FBC009BB491 /* TaskFourViewController.swift */; };
 		5BED731D21F76FFE009BB491 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED731C21F76FFE009BB491 /* Protocol.swift */; };
+		5BED731F21F7D1AF009BB491 /* TaskFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED731E21F7D1AF009BB491 /* TaskFiveViewController.swift */; };
+		5BED732121F7D1C3009BB491 /* TaskFive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED732021F7D1C3009BB491 /* TaskFive.storyboard */; };
+		5BED732421F7D214009BB491 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED732321F7D214009BB491 /* Phone.swift */; };
 		9609993121998CAB006B6D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609993021998CAB006B6D62 /* AppDelegate.swift */; };
 		9609993821998CAD006B6D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9609993721998CAD006B6D62 /* Assets.xcassets */; };
 		9609995321998FFE006B6D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9609995221998FFE006B6D62 /* LaunchScreen.storyboard */; };
@@ -58,6 +61,9 @@
 		5BED731721F76F78009BB491 /* TaskFour.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskFour.storyboard; sourceTree = "<group>"; };
 		5BED731921F76FBC009BB491 /* TaskFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFourViewController.swift; sourceTree = "<group>"; };
 		5BED731C21F76FFE009BB491 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		5BED731E21F7D1AF009BB491 /* TaskFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFiveViewController.swift; sourceTree = "<group>"; };
+		5BED732021F7D1C3009BB491 /* TaskFive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskFive.storyboard; sourceTree = "<group>"; };
+		5BED732321F7D214009BB491 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		9609992D21998CAB006B6D62 /* iOSMobileArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMobileArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609993021998CAB006B6D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9609993721998CAD006B6D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,6 +146,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5BED732221F7D202009BB491 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BED732321F7D214009BB491 /* Phone.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9609992421998CAB006B6D62 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +206,7 @@
 				5B0F07AD21F35A3000A85F2A /* TaskTwo.storyboard */,
 				5B0F07BA21F6791300A85F2A /* TaskThree.storyboard */,
 				5BED731721F76F78009BB491 /* TaskFour.storyboard */,
+				5BED732021F7D1C3009BB491 /* TaskFive.storyboard */,
 				9609995221998FFE006B6D62 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -270,7 +285,9 @@
 		96B0E7AE21B00C9E001AD6FF /* TaskFiveScreen */ = {
 			isa = PBXGroup;
 			children = (
+				5BED732221F7D202009BB491 /* Model */,
 				96B0E7AF21B00CAF001AD6FF /* TaskFive */,
+				5BED731E21F7D1AF009BB491 /* TaskFiveViewController.swift */,
 			);
 			path = TaskFiveScreen;
 			sourceTree = "<group>";
@@ -334,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9663320621C8E15C004ABCA2 /* TaskSix in Resources */,
+				5BED732121F7D1C3009BB491 /* TaskFive.storyboard in Resources */,
 				5B0F07BB21F6791300A85F2A /* TaskThree.storyboard in Resources */,
 				9663320B21C8E39C004ABCA2 /* TaskSeven in Resources */,
 				5BED731821F76F78009BB491 /* TaskFour.storyboard in Resources */,
@@ -361,6 +379,7 @@
 				5B0F07C921F6818900A85F2A /* CarsStruct.swift in Sources */,
 				5B0F07C521F67FFF00A85F2A /* ModelProtocol.swift in Sources */,
 				5B0F07B521F364C200A85F2A /* Table.swift in Sources */,
+				5BED732421F7D214009BB491 /* Phone.swift in Sources */,
 				5B0F07B121F35D7700A85F2A /* PrototocolFurniture.swift in Sources */,
 				9663320821C8E27D004ABCA2 /* TaskSixProtocol.swift in Sources */,
 				5B0F07C021F67F3D00A85F2A /* TaskThreePartTwoViewController.swift in Sources */,
@@ -370,6 +389,7 @@
 				5B0F07AC21F35A1500A85F2A /* TaskTwoViewController.swift in Sources */,
 				5BED731D21F76FFE009BB491 /* Protocol.swift in Sources */,
 				5BED731A21F76FBC009BB491 /* TaskFourViewController.swift in Sources */,
+				5BED731F21F7D1AF009BB491 /* TaskFiveViewController.swift in Sources */,
 				5B0F07AA21F356CD00A85F2A /* TaskOneVC.swift in Sources */,
 				5B0F07BE21F67F2C00A85F2A /* TaskThreePartOneViewController.swift in Sources */,
 				5B0F07C221F67F4E00A85F2A /* TaskThreePartThreeViewController.swift in Sources */,
