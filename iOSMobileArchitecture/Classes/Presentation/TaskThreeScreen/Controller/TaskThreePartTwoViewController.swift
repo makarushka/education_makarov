@@ -12,11 +12,12 @@ protocol OneSendDelegate {
     func saveData(cars: ModelProtocol)
 }
 
-class TaskThreePartTwoViewController: UIViewController {
+class TaskThreePartTwoViewController: UIViewController, UITextFieldDelegate {
     
     var carsClass: ModelProtocol?
     
     var delegate: OneSendDelegate?
+    
     
     @IBOutlet private weak var titleTxt: UITextField! {
         didSet {
@@ -47,14 +48,15 @@ class TaskThreePartTwoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     
     @IBAction func save(_ sender: UIButton) {
-        guard let cars = carsClass else {return}
-        self.delegate?.saveData(cars: cars)
+        self.delegate?.saveData(cars: carsClass!)
         self.navigationController?.popToRootViewController(animated: true)
         
     }
+    
+    
+    
 }
