@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HaK-aP-THj">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task Two View Controller-->
+        <scene sceneID="34Z-2B-twM">
+            <objects>
+                <viewController id="HaK-aP-THj" customClass="TaskTwoViewController" customModule="iOSMobileArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8vd-4e-iZp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsE-pR-3fd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите название мебели" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzG-Zl-SIK">
+                                        <rect key="frame" x="8" y="71" width="304" height="78"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="78" id="29K-FU-2vI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ua9-E9-6t2">
+                                        <rect key="frame" x="8" y="179" width="304" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gem-DK-nqH">
+                                        <rect key="frame" x="123.5" y="259" width="73" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7mg-sQ-VEo"/>
+                                            <constraint firstAttribute="width" constant="73" id="KE4-HX-uIu"/>
+                                        </constraints>
+                                        <state key="normal" title="Push"/>
+                                        <connections>
+                                            <action selector="createFurniture:" destination="HaK-aP-THj" eventType="touchUpInside" id="Bxc-p1-K3R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XzG-Zl-SIK" firstAttribute="centerX" secondItem="hsE-pR-3fd" secondAttribute="centerX" id="2I4-eW-j82"/>
+                                    <constraint firstAttribute="bottom" secondItem="gem-DK-nqH" secondAttribute="bottom" constant="259" id="9Hm-vi-NJl"/>
+                                    <constraint firstItem="gem-DK-nqH" firstAttribute="centerY" secondItem="hsE-pR-3fd" secondAttribute="centerY" id="P1h-Jx-Yeb"/>
+                                    <constraint firstItem="XzG-Zl-SIK" firstAttribute="trailing" secondItem="hsE-pR-3fd" secondAttribute="trailingMargin" id="WRa-vE-hAg"/>
+                                    <constraint firstItem="XzG-Zl-SIK" firstAttribute="trailing" secondItem="Ua9-E9-6t2" secondAttribute="trailing" id="jBU-sl-yW5"/>
+                                    <constraint firstItem="XzG-Zl-SIK" firstAttribute="top" secondItem="hsE-pR-3fd" secondAttribute="top" constant="71" id="oCM-sv-ZJv"/>
+                                    <constraint firstItem="XzG-Zl-SIK" firstAttribute="leading" secondItem="Ua9-E9-6t2" secondAttribute="leading" id="snb-a1-sU4"/>
+                                    <constraint firstItem="Ua9-E9-6t2" firstAttribute="centerX" secondItem="gem-DK-nqH" secondAttribute="centerX" id="uMZ-c6-8dE"/>
+                                    <constraint firstItem="XzG-Zl-SIK" firstAttribute="leading" secondItem="hsE-pR-3fd" secondAttribute="leadingMargin" id="uoQ-tk-YSS"/>
+                                    <constraint firstItem="Ua9-E9-6t2" firstAttribute="top" secondItem="XzG-Zl-SIK" secondAttribute="bottom" constant="30" id="xWr-BU-Aaw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hsE-pR-3fd" firstAttribute="bottom" secondItem="Ohr-Wi-IhX" secondAttribute="bottom" id="6cP-gp-6aU"/>
+                            <constraint firstAttribute="trailing" secondItem="hsE-pR-3fd" secondAttribute="trailing" id="Kv9-na-Ndt"/>
+                            <constraint firstItem="hsE-pR-3fd" firstAttribute="top" secondItem="8vd-4e-iZp" secondAttribute="top" id="VOy-xm-4WL"/>
+                            <constraint firstItem="hsE-pR-3fd" firstAttribute="leading" secondItem="8vd-4e-iZp" secondAttribute="leading" id="bJt-Ir-E4C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ohr-Wi-IhX"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblFurniture" destination="XzG-Zl-SIK" id="Cp3-Yj-lOg"/>
+                        <outlet property="typeFurnitureTxt" destination="Ua9-E9-6t2" id="w1l-s9-TBV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mt9-X9-7vb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75" y="216.5492957746479"/>
+        </scene>
+    </scenes>
+</document>
