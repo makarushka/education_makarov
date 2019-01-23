@@ -37,7 +37,8 @@ class TaskThreePartTwoViewController: UIViewController, UITextFieldDelegate {
     }
     @IBOutlet private weak var dateTxt: UITextField! {
         didSet {
-            self.dateTxt.text = carsClass?.date?.dateWithFormat(with: "dd.MM.YYYY")
+            guard let date = carsClass?.date else {return}
+            self.dateTxt.text = date.stringWithDate()
         }
     }
     @IBOutlet private weak var priceTxt: UITextField! {
@@ -46,17 +47,20 @@ class TaskThreePartTwoViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     
     @IBAction func save(_ sender: UIButton) {
-        self.delegate?.saveData(cars: carsClass!)
+        
+        
+        
+        let newCar = CarsClass()
+        newCar.title = titleTxt.text
+        newCar.description = descriptionTxt.text
+        newCar.color = colorTxt.text
+        newCar.priceCount = Int(priceTxt.text!)
+        newCar.date = dateTxt.text?.dateWithString()
+        
+        self.delegate?.saveData(cars: newCar)
         self.navigationController?.popToRootViewController(animated: true)
         
     }
-    
-    
-    
 }

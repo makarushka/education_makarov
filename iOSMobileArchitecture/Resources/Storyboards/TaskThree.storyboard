@@ -195,6 +195,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qTA-lm-tuc"/>
                     </view>
+                    <connections>
+                        <outlet property="colorTxt" destination="ste-HU-puZ" id="Wpw-sH-Ufv"/>
+                        <outlet property="dateTxt" destination="RAe-Pl-rQ5" id="Bbb-O1-pqH"/>
+                        <outlet property="descriptionTxt" destination="hbJ-6r-PYg" id="5eQ-CF-mvt"/>
+                        <outlet property="priceTxt" destination="hcF-aM-5cF" id="O2O-1x-urw"/>
+                        <outlet property="titleTxt" destination="4DE-Kb-v9F" id="99T-at-oGQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvT-4m-WPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,7 +16,7 @@ class TaskFiveViewController: UIViewController {
         super.viewDidLoad()
         
         
-        CreatorPhone.shared.createPhone(count: 10000, start: {
+        CreatorPhone.shared.createPhone(count: 100000, start: {
             self.indicator.startAnimating()
         }) {
             self.indicator.stopAnimating()

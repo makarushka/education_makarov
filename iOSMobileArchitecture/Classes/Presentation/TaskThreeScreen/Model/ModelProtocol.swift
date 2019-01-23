@@ -15,12 +15,20 @@ protocol ModelProtocol {
     var priceCount: Int? {get}
     var date: Date? {get}
 }
-
-
 extension Date {
-    func dateWithFormat(with format: String) -> String {
+    func stringWithDate() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
+        dateFormatter.dateFormat = "DD-MM-YYYY"
+        dateFormatter.locale = Locale(identifier: "ru_RU")
         return dateFormatter.string(from: self)
+    }
+}
+
+extension String {
+    func dateWithString() -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "DD-MM-YYYY"
+        dateFormatter.locale = Locale(identifier: "ru_RU")
+        return dateFormatter.date(from: self)
     }
 }

@@ -10,21 +10,33 @@ import UIKit
 
 class TaskThreePartThreeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var carsStruct: ModelProtocol?
+    
+    @IBOutlet private weak var titleTxt: UITextField! {
+        didSet {
+            self.titleTxt.text = carsStruct?.title
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet private weak var descriptionTxt: UITextField! {
+        didSet {
+            self.descriptionTxt.text = carsStruct?.description
+        }
     }
-    */
-
+    @IBOutlet private weak var colorTxt: UITextField! {
+        didSet {
+            self.colorTxt.text = carsStruct?.color
+        }
+    }
+    @IBOutlet private weak var dateTxt: UITextField! {
+        didSet {
+            guard let date = carsStruct?.date else {return}
+            self.dateTxt.text = date.stringWithDate()
+        }
+    }
+    @IBOutlet private weak var priceTxt: UITextField! {
+        didSet {
+            self.priceTxt.text = carsStruct?.priceCount?.description
+        }
+    }
 }

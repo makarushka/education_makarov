@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pqZ-LC-gSb">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pqZ-LC-gSb">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pqZ-LC-gSb" firstAttribute="top" secondItem="G1n-eW-pSA" secondAttribute="top" constant="254" id="6T3-LV-91H"/>
+                            <constraint firstItem="G1n-eW-pSA" firstAttribute="trailing" secondItem="pqZ-LC-gSb" secondAttribute="trailing" constant="150" id="6mV-2n-0bl"/>
+                            <constraint firstItem="G1n-eW-pSA" firstAttribute="bottom" secondItem="pqZ-LC-gSb" secondAttribute="bottom" constant="274" id="OoO-FJ-1ZU"/>
+                            <constraint firstItem="pqZ-LC-gSb" firstAttribute="leading" secondItem="G1n-eW-pSA" secondAttribute="leading" constant="150" id="PoP-1H-ZeR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G1n-eW-pSA"/>
                     </view>
                     <connections>
