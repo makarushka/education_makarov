@@ -11,13 +11,15 @@ import UIKit
 class TaskFiveViewController: UIViewController {
 
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var lblCount: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        CreatorPhone.shared.createPhone(count: 100000, start: {
+        CreatorPhone.shared.createPhone(count: 100_000, start: {
             self.indicator.startAnimating()
+        }, countCreated: { (countNumber) in
+            self.lblCount.text = "Создано \(countNumber) эллементов"
         }) {
             self.indicator.stopAnimating()
         }

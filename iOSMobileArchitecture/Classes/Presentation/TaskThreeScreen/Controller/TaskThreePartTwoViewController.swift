@@ -9,7 +9,7 @@
 import UIKit
 
 protocol OneSendDelegate {
-    func saveData(cars: ModelProtocol)
+    func saveData(cars: CarsClass)
 }
 
 class TaskThreePartTwoViewController: UIViewController, UITextFieldDelegate {

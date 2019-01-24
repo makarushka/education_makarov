@@ -12,6 +12,8 @@ class TaskThreePartThreeViewController: UIViewController {
 
     var carsStruct: ModelProtocol?
     
+    var didResult: ((CarsStruct) -> Void)?
+    
     @IBOutlet private weak var titleTxt: UITextField! {
         didSet {
             self.titleTxt.text = carsStruct?.title
@@ -39,4 +41,17 @@ class TaskThreePartThreeViewController: UIViewController {
             self.priceTxt.text = carsStruct?.priceCount?.description
         }
     }
+    
+    
+    @IBAction func sendDate(_ sender: UIButton) {
+        var structCars = CarsStruct()
+        structCars.title = titleTxt.text
+        structCars.description = descriptionTxt.text
+        structCars.color = colorTxt.text
+        structCars.priceCount = Int(priceTxt.text!)
+        structCars.date = dateTxt.text?.dateWithString()
+        self.didResult!(structCars)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

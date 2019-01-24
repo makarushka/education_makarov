@@ -18,7 +18,8 @@ protocol ModelProtocol {
 extension Date {
     func stringWithDate() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "DD-MM-YYYY"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(identifier: "Europe/Moskow")
         dateFormatter.locale = Locale(identifier: "ru_RU")
         return dateFormatter.string(from: self)
     }
@@ -27,7 +28,8 @@ extension Date {
 extension String {
     func dateWithString() -> Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "DD-MM-YYYY"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(identifier: "Europe/Moskow")
         dateFormatter.locale = Locale(identifier: "ru_RU")
         return dateFormatter.date(from: self)
     }

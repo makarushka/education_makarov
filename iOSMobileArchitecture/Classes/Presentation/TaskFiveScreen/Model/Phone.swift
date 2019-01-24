@@ -16,7 +16,7 @@ protocol Phone {
 
 extension Phone {
     var serialNumber: Int {
-        return Int.random(in: 10000...30000)
+        return Int.random(in: 10_000_000...30_000_000)
     }
 }
 
@@ -32,18 +32,21 @@ class CreatorPhone {
     
     var shop: [Phone] = []
     
-    func createPhone(count: Int, start: @escaping () -> Void, complition: @escaping () -> Void) {
+    func createPhone(count: Int, start: @escaping () -> Void, countCreated: @escaping (Int) -> Void, complition: @escaping () -> Void) {
         var countCreate: Int = 0
         start()
         DispatchQueue.global().async {
             while countCreate < count{
                 countCreate += 1
+                DispatchQueue.main.async {
+                    countCreated(countCreate)
+                }
                 let newPhone = Iphone7()
                 self.shop.append(newPhone)
                 print(countCreate, " Создали \(newPhone.title) с серийником \(newPhone.serialNumber)")
             }
             DispatchQueue.main.async {
-            complition()
+                complition()
             }
         }
     }

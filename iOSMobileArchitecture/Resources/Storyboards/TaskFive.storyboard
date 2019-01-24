@@ -21,23 +21,33 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pqZ-LC-gSb">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-oR-YRf">
+                                <rect key="frame" x="16" y="93" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pqZ-LC-gSb" firstAttribute="top" secondItem="G1n-eW-pSA" secondAttribute="top" constant="254" id="6T3-LV-91H"/>
                             <constraint firstItem="G1n-eW-pSA" firstAttribute="trailing" secondItem="pqZ-LC-gSb" secondAttribute="trailing" constant="150" id="6mV-2n-0bl"/>
+                            <constraint firstItem="FRi-oR-YRf" firstAttribute="top" secondItem="G1n-eW-pSA" secondAttribute="top" constant="73" id="9KP-vL-Lqx"/>
                             <constraint firstItem="G1n-eW-pSA" firstAttribute="bottom" secondItem="pqZ-LC-gSb" secondAttribute="bottom" constant="274" id="OoO-FJ-1ZU"/>
                             <constraint firstItem="pqZ-LC-gSb" firstAttribute="leading" secondItem="G1n-eW-pSA" secondAttribute="leading" constant="150" id="PoP-1H-ZeR"/>
+                            <constraint firstItem="FRi-oR-YRf" firstAttribute="centerX" secondItem="pqZ-LC-gSb" secondAttribute="centerX" id="Px1-3I-Imr"/>
+                            <constraint firstItem="FRi-oR-YRf" firstAttribute="leading" secondItem="LKo-iB-UQe" secondAttribute="leadingMargin" id="jDk-k0-fCw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G1n-eW-pSA"/>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="pqZ-LC-gSb" id="IjN-vx-0a9"/>
+                        <outlet property="lblCount" destination="FRi-oR-YRf" id="y6O-9z-Cjl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gT3-Uc-hLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="223"/>
+            <point key="canvasLocation" x="56.25" y="222.88732394366198"/>
         </scene>
     </scenes>
 </document>
