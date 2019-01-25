@@ -28,6 +28,8 @@
 		5BED731F21F7D1AF009BB491 /* TaskFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED731E21F7D1AF009BB491 /* TaskFiveViewController.swift */; };
 		5BED732121F7D1C3009BB491 /* TaskFive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED732021F7D1C3009BB491 /* TaskFive.storyboard */; };
 		5BED732421F7D214009BB491 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED732321F7D214009BB491 /* Phone.swift */; };
+		5BF1009F21FA7986009E8C00 /* TaskSeven.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1009E21FA7986009E8C00 /* TaskSeven.storyboard */; };
+		5BF100A121FA7B9D009E8C00 /* TaskSevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF100A021FA7B9D009E8C00 /* TaskSevenViewController.swift */; };
 		9609993121998CAB006B6D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609993021998CAB006B6D62 /* AppDelegate.swift */; };
 		9609993821998CAD006B6D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9609993721998CAD006B6D62 /* Assets.xcassets */; };
 		9609995321998FFE006B6D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9609995221998FFE006B6D62 /* LaunchScreen.storyboard */; };
@@ -64,6 +66,8 @@
 		5BED731E21F7D1AF009BB491 /* TaskFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFiveViewController.swift; sourceTree = "<group>"; };
 		5BED732021F7D1C3009BB491 /* TaskFive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskFive.storyboard; sourceTree = "<group>"; };
 		5BED732321F7D214009BB491 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		5BF1009E21FA7986009E8C00 /* TaskSeven.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskSeven.storyboard; sourceTree = "<group>"; };
+		5BF100A021FA7B9D009E8C00 /* TaskSevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSevenViewController.swift; sourceTree = "<group>"; };
 		9609992D21998CAB006B6D62 /* iOSMobileArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMobileArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609993021998CAB006B6D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9609993721998CAD006B6D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 				5B0F07BA21F6791300A85F2A /* TaskThree.storyboard */,
 				5BED731721F76F78009BB491 /* TaskFour.storyboard */,
 				5BED732021F7D1C3009BB491 /* TaskFive.storyboard */,
+				5BF1009E21FA7986009E8C00 /* TaskSeven.storyboard */,
 				9609995221998FFE006B6D62 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -239,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				9663320A21C8E39C004ABCA2 /* TaskSeven */,
+				5BF100A021FA7B9D009E8C00 /* TaskSevenViewController.swift */,
 			);
 			path = TaskSevenScreen;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				5B0F07A821F355A500A85F2A /* TaskOne.storyboard in Resources */,
 				96B0E7A121AFD413001AD6FF /* ReadMe in Resources */,
 				96B0E7A721AFE4AF001AD6FF /* TaskTwo in Resources */,
+				5BF1009F21FA7986009E8C00 /* TaskSeven.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +389,7 @@
 				5BED732421F7D214009BB491 /* Phone.swift in Sources */,
 				5B0F07B121F35D7700A85F2A /* PrototocolFurniture.swift in Sources */,
 				9663320821C8E27D004ABCA2 /* TaskSixProtocol.swift in Sources */,
+				5BF100A121FA7B9D009E8C00 /* TaskSevenViewController.swift in Sources */,
 				5B0F07C021F67F3D00A85F2A /* TaskThreePartTwoViewController.swift in Sources */,
 				5B0F07B321F35E9100A85F2A /* Chair.swift in Sources */,
 				5B0F07C721F6814200A85F2A /* CarsClass.swift in Sources */,

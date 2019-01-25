@@ -19,7 +19,9 @@ class TaskFiveViewController: UIViewController {
         CreatorPhone.shared.createPhone(count: 100_000, start: {
             self.indicator.startAnimating()
         }, countCreated: { (countNumber) in
+            DispatchQueue.main.async {
             self.lblCount.text = "Создано \(countNumber) эллементов"
+            }
         }) {
             self.indicator.stopAnimating()
         }
