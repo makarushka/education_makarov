@@ -38,7 +38,9 @@ class CreatorPhone {
         DispatchQueue.global().async {
             while countCreate < count{
                 countCreate += 1
+                DispatchQueue.main.async {
                     countCreated(countCreate)
+                }
                 let newPhone = Iphone7()
                 self.shop.append(newPhone)
                 print(countCreate, " Создали \(newPhone.title) с серийником \(newPhone.serialNumber)")

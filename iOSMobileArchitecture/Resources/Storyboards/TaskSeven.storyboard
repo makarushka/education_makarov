@@ -43,6 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="NW4-v9-iF9" id="TW8-ML-J5v"/>
+                        <outlet property="lblCount" destination="o2a-TE-7PD" id="776-nM-ZQy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2Y-f9-1wI" userLabel="First Responder" sceneMemberID="firstResponder"/>

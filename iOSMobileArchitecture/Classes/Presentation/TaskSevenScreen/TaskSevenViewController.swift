@@ -9,9 +9,12 @@
 import UIKit
 
 class TaskSevenViewController: UIViewController {
-
     
-    var imageArray: [UIImage] = []
+    
+    var imageAll: [UIImage] = []
+    let img = UIImage(named: "Image1")
+    let img2 = UIImage(named: "Image2")
+    private var selectedImage: [UIImage] = []
     
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
@@ -20,29 +23,24 @@ class TaskSevenViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var lblCount: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.imageAll.append(img!)
+        self.imageAll.append(img2!)
     }
     
     @IBAction func sendImage(_ sender: UIButton) {
-        let randomCount = Int.random(in: 1...200)
-        var valueCount = 0
-        while valueCount != randomCount {
-            valueCount += 1
-            for i in imageArray {
-                self.imageView.image = i
+        DispatchQueue.global().async {
+            guard let image = self.imageAll.randomElement() else {return}
+            self.selectedImage.append(image)
+            let countSel = self.selectedImage.filter{$0 == image}.count
+            DispatchQueue.main.async {
+                self.imageView.image = image
+                self.lblCount.text = "Эта картинка была выбрана \(countSel) раз"
             }
-            print(valueCount)
         }
-    }
-    
-}
-
-
-
-extension UIImage {
-    var countSelect: Int {
-        return 0
     }
 }
