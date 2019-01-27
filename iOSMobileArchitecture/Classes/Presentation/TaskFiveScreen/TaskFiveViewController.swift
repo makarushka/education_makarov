@@ -19,7 +19,7 @@ class TaskFiveViewController: UIViewController {
         CreatorPhone.shared.createPhone(count: 100_000, start: {
             self.indicator.startAnimating()
         }, countCreated: { (countNumber) in
-            //self.lblCount.text = "Создано \(countNumber) эллементов"
+            self.lblCount.text = "Создано \(countNumber) эллементов"
         }) {
             self.indicator.stopAnimating()
         }
