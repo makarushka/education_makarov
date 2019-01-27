@@ -179,6 +179,7 @@
                                         <state key="normal" title="Accept"/>
                                         <connections>
                                             <action selector="save:" destination="9lt-Uu-IZu" eventType="touchUpInside" id="Q84-4H-QkV"/>
+                                            <action selector="sendDate:" destination="OW5-AQ-Rel" eventType="touchUpInside" id="INJ-F8-b6x"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHl-ep-GC1">
