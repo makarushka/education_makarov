@@ -12,3 +12,14 @@ protocol TaskSixProtocol {
     
     func asValue() -> E
 }
+
+
+class TaskSix<T: TaskSixProtocol> where T.E == Int {
+    
+    func test(value: T) {
+        print(value.asValue())
+    }
+}
+
+
+
